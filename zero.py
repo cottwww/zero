@@ -12,9 +12,9 @@ import ctypes
 import datetime
 
 
-client_id = '8259f7767f264d1ca4b9864c7078efb7'
-client_secret = '66561e488585439fbce9d943aac9bbbc'
-os.environ['SPOTIPY_REDIRECT_URI'] = 'http://localhost:61579'
+client_id = 'seu id spotify'
+client_secret = 'seu secret id spotify'
+os.environ['SPOTIPY_REDIRECT_URI'] = 'ip server'
 agora = datetime.datetime.now()
 horas = agora.hour
 minutos = agora.minute
@@ -232,14 +232,6 @@ def suspender_sistema():
 def desligar_sistema():
     os.system("shutdown /s /t 1")
 
-
-xingamentom = ["vadia", "puta", "arrombada", "vagabunda", "safada", "pobre", "inútil", "máquina de lavar louça", "fudida", "burra"]
-
-xingamentoh = ["vagabundo", "preto", "arrombado", "vagabundo", "inútil", "pobre", "fudido", "desempregado", "virgem"]
-
-xingamentoc = ["Vai se foder", "Vai se fuder", "filho da puta", "desempregado fudido", "passa fome", "pobre fudido", "Vai tomar no cu"]
-
-xingamentocop = ["vai se fuder", "filho da puta", "desempregado fudido", "passa fome", "pobre fudido", "Vai tomar no cu"]
     
 
 while True:
@@ -303,11 +295,6 @@ while True:
             iafala("Abrindo YouTube")
             webbrowser.open('https://www.youtube.com/')
 
-        elif fala == 'abrir blood strike':
-            iafala('Abrindo Blood Strike')
-            os.startfile('C:/Users/stonk/bloodstrike/launcher.exe')
-            os.startfile('E:/importante/Automatic Mouse and Keyboard 5.2.9.2 + Crack-20240129T045523Z-001/Automatic Mouse and Keyboard 5.2.9.2 + Crack/Crack/AutoMouseKey.exe')
-
         elif fala == 'desligar' or fala == 'sair':
             iafala(despedida_resposta())
             time.sleep(1)
@@ -320,24 +307,24 @@ while True:
             iafala('Voltando ao modo de espera...')
             ativado = False
 
-        elif fala == 'tocar mix':
-            iafala('Tocando mix diario')
-            playlist_uri = 'https://open.spotify.com/playlist/37i9dQZF1E37KkqbdConyC?si=7a42a6f38fe94ac0'
+        elif fala == 'tocar "playlist"':
+            iafala('Tocando a playlist de.')
+            playlist_uri = 'link'
             sp.start_playback(context_uri=playlist_uri)
 
-        elif fala == 'tocar playlist para jogar' or fala == 'playlist para jogar' or fala == 'música para jogar':
-            iafala('Tocando a playlist para jogar.')
-            playlist_uri = 'https://open.spotify.com/playlist/4S8at0p9gFCzWxlyy50L8Q?si=298d15df530b4743'
+        elif fala == 'tocar "playlist"':
+            iafala('Tocando a playlist de.')
+            playlist_uri = 'link'
             sp.start_playback(context_uri=playlist_uri)
 
-        elif fala == 'tocar rap':
-            iafala('Tocando a playlist de rap.')
-            playlist_uri = 'https://open.spotify.com/playlist/7bicDFaQYlp9DUgF3XNyZK?si=7e6e9b8348914450'
+        elif fala == 'tocar "playlist"':
+            iafala('Tocando a playlist de.')
+            playlist_uri = 'link'
             sp.start_playback(context_uri=playlist_uri)
 
-        elif fala == 'tocar funk':
-            iafala('Tocando a playlist de funk.')
-            playlist_uri = 'https://open.spotify.com/playlist/5nRiuP8eC5tCY2MpX8qr0q?si=f7b033bf91dd49b2'
+        elif fala == 'tocar "playlist"':
+            iafala('Tocando a playlist de.')
+            playlist_uri = 'link'
             sp.start_playback(context_uri=playlist_uri)
 
         elif fala ==  'pausar':
@@ -356,17 +343,10 @@ while True:
             iafala('Voltando para a música anterior.')
             sp.previous_track()
         
-        elif fala in xingamentom:
-            respostah = random.choice(xingamentoh)
-            iafala(f'Me respeita seu {respostah}')
-            
-        elif fala in xingamentoc:
-            respostacop = random.choice(xingamentocop)
-            iafala(f"Cuidado com o que diz seu {respostacop}")
 
         elif fala == 'abrir discord':
             iafala('Abrindo Discord')
-            os.startfile('C:/Users/stonk/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Discord Inc/Discord')
+            os.startfile('caminho discord ou site')
 
         elif fala == 'suspender sistema':
             iafala('Suspendendo o sistema, aguarde...')
@@ -381,9 +361,9 @@ while True:
         elif fala ==  'introdução' or fala == 'quem é você' or fala == 'se apresente':
             iafala(apresentação())
 
-        elif fala == 'abrir minecraft':
+        elif fala == 'abrir "programa"':
             iafala('Abrindo minecraft')
-            os.startfile('C:/ProgramData/Microsoft/Windows/Start Menu/Programs/CMClient Launcher')
+            os.startfile('caminho')
 
         elif fala == 'que horas são?' or fala == 'que horas são' or fala == 'horas':
             iafala(f'São {horas} horas e {minutos} minutos')
