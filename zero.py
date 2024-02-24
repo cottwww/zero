@@ -367,4 +367,3 @@ while True:
 
         elif fala == 'que horas são?' or fala == 'que horas são' or fala == 'horas':
             iafala(f'São {horas} horas e {minutos} minutos')
-            
